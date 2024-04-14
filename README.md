@@ -1,7 +1,7 @@
-# Tabapay-UI Project Part-5 #
+# Tabapay-UI Project Part-6 #
 
 ## Description ##
-Add-on from Part 4, Created and Added JSON Data to simulate categories of textual data.
+Add-on from Part 5, Used fetch API to get data from backend server.
 
 
 ## Installation ##
