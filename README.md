@@ -1,7 +1,7 @@
-# Tabapay-UI Project Part-2 #
+# Tabapay-UI Project Part-3 #
 
 ## Description ##
-Add-on from Part 1, Added Modal Dialog box to show title/label of the node, user clicks on.
+Add-on from Part 2, Added Body Content space on the right side to show title/label of the node, user clicks on.
 
 
 ## Installation ##
