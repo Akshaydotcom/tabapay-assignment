@@ -1,0 +1,12 @@
+/* Basic Css Styling for the project */
+:root{
+  --primary-background: linear-gradient(to right, #74ebd5, #acb6e5);
+}
+
+body {
+  margin: 0;
+  place-items: center;
+  min-height: 100vh;
+  font-family: Sora;
+	background: var(--primary-background);
+}
