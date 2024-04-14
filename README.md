@@ -19,4 +19,4 @@ To check production, run "npm run build"
    This could be done by using an API to get data from the server, thus allowing us to limit the number/size of the response.
 
 2. Depending on the relation between the categories of text, we could group them first, and then show different categories in the each group. 
-   We could try different Tabs for different Groups or Use a similar Tree View with the group headings as the first level of nodes, so
+   We could try different Tabs for different Groups or Use a similar Tree View with the group headings as the first level of nodes, so to speak.
