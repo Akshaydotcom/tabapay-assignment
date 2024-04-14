@@ -20,3 +20,6 @@ To check production, run "npm run build"
 
 2. Depending on the relation between the categories of text, we could group them first, and then show different categories in the each group. 
    We could try different Tabs for different Groups or Use a similar Tree View with the group headings as the first level of nodes, so to speak.
+
+### Update ###
+To check Live Version of the project: [Website](https://tabapay-ui-agigabyte.netlify.app)
