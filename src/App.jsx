@@ -1,10 +1,13 @@
 import { useState } from 'react';
+import { createPortal } from "react-dom";
 import './App.css'
 import {navData} from './assets/navData';
 import TreeNode from './components/TreeNode';
+import ModalContainer from "./helperComponents/ModalContainer";
 function App() {
   const [openNodeIdsByLevel, setOpenNodeIdsByLevel] = useState({});
-
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [message, setMessage] = useState("");
   //lifted state up from TreeNode component to keep track of Open Nodes by Levels in the Tree
   const toggleNode = (nodeId, level) => {
     setOpenNodeIdsByLevel((prevState) => ({
@@ -19,15 +22,33 @@ function App() {
     return openNodeIdsByLevel[level] === nodeId;
   };
 
-  //render TreeNode if navData is present
+  //function to set the message/title of the modal pop up
+  function showTitle(message) {
+    setMessage(message);
+    setIsModalOpen(true);
+  }
+
+  //render TreeNode if navData is present, added modal pop-up using createPortal 
   return (
     <>
       {navData && <TreeNode
             node={navData}
             level={0}
+            showTitle={showTitle}
             toggleNode={toggleNode}
             isNodeOpen={isNodeOpen}
           />}
+          {isModalOpen &&
+        message.length > 0 &&
+        createPortal(
+          <ModalContainer
+            message={message}
+            onClose={() => {
+              setIsModalOpen(false);
+            }}
+          />,
+          document.body
+        )}
     </>
   )
 }

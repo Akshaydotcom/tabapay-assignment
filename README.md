@@ -1,8 +1,8 @@
-# Tabapay-UI Project Part-1 #
+# Tabapay-UI Project Part-2 #
 
 ## Description ##
-React Project, built using Vite and Vanilla CSS, to create a dynamic TreeMenu as per specifications given by Tabapay Project
-Data for the Tree is a JSON object and has been stored in assets folder in file navData.js because of separation of concerns
+Add-on from Part 1, Added Modal Dialog box to show title/label of the node, user clicks on.
+
 
 ## Installation ##
 Since this project is built using Vite, please run:
@@ -13,4 +13,3 @@ Since this project is built using Vite, please run:
 Open Browser with the url given by last command.
 
 To check production, run "npm run build"
-
