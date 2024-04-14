@@ -2,9 +2,11 @@
 
 ## Description ##
 Add-on from Part 5, Used fetch API to get data from backend server.
-
+Added basic APIs using Node and Express, to be served locally.
 
 ## Installation ##
+
+### Frontend Installation ###
 Since this project is built using Vite, please run:
 1. npm install
 2. cd ./tabapay-ui/
@@ -13,6 +15,14 @@ Since this project is built using Vite, please run:
 Open Browser with the url given by last command.
 
 To check production, run "npm run build"
+
+### Backend Installation ###
+Please run the following commands:
+1. npm init
+2. npm install express
+3. node index.js
+
+Also, please make sure that the Backend Server is Up and running when checking the Webpage. 
 
 ### Note ###
 1. Also, if the need arises, we could use pagination on top of the existing responsive page in case of more categories, and/or more textual information. 
