@@ -31,6 +31,16 @@ main {
     margin-top: 0;
 }
 
+details {
+    padding-bottom: 9px;
+}
+
+.different-category-content {
+    overflow-y: scroll;
+    max-height: 69vh;
+}
+
+
 .logo {
     width: 5%
 }
@@ -63,14 +73,20 @@ footer pre {
 @media screen and (max-width: 480px) {
     .main-content {
         display: block;
-      }
-    
+    }
+
     .modal {
         left: 25%;
     }
 
     .logo {
         width: 15%
+    }
+
+    .different-category-content {
+        overflow-y: scroll;
+        max-height: 50vh;
+        padding-left: 2em;
     }
 
     .panel {
