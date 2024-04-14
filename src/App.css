@@ -3,13 +3,19 @@
     user-select: none;
 }
 
+header,
+footer {
+    display: flex;
+    justify-content: center;
+}
+
 .main-content {
     display: grid;
     grid-template-columns: 30% 70%;
     height: 77vh;
 }
 
-.page-content {
+aside {
     font-size: 20px;
     padding-left: 25%;
     display: flex;
@@ -17,12 +23,16 @@
     align-self: center;
 }
 
-.main-content>div {
+main {
     font-size: 20px;
 }
 
 .panel h1 {
     margin-top: 0;
+}
+
+.logo {
+    width: 5%
 }
 
 .modal {
@@ -41,9 +51,26 @@
     bottom: 70px;
 }
 
+footer {
+    position: relative;
+    top: 10%;
+}
+
+footer pre {
+    align-content: center;
+}
+
 @media screen and (max-width: 480px) {
+    .main-content {
+        display: block;
+      }
+    
     .modal {
         left: 25%;
+    }
+
+    .logo {
+        width: 15%
     }
 
     .panel {

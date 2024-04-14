@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import "./App.css";
+import logo from "../public/p2.png";
 import { navData } from "./assets/navData";
 import TreeNode from "./components/TreeNode";
 import PageContent from "./components/PageContent";
@@ -47,11 +48,16 @@ function App() {
   /*
   render TreeNode if navData is present, added modal pop-up using createPortal, added newly created
   component to show the title/label of the node clicked by the user. 
+  Added header and footers, changed html semantics 
   */
   return (
     <>
+      <header>
+        <img src={logo} alt="logo" className="logo" />
+        <h1>Developers UI Project</h1>
+      </header>
       <div className="main-content">
-        <div>
+        <aside>
           {navData && (
             <TreeNode
               node={navData}
@@ -61,18 +67,25 @@ function App() {
               isNodeOpen={isNodeOpen}
             />
           )}
-        </div>
-        <div className="page-content">
-          {!mobile && <PageContent title={message} />}
-          {mobile && isSidePanelOpen && (
-            <PageContent
-              title={message}
-              isSidePanelOpen={isSidePanelOpen}
-              setIsSidePanelOpen={setIsSidePanelOpen}
-            />
-          )}
-        </div>
+        </aside>
+        <main>
+          <article>
+            {!mobile && <PageContent title={message} />}
+            {mobile && isSidePanelOpen && (
+              <PageContent
+                title={message}
+                isSidePanelOpen={isSidePanelOpen}
+                setIsSidePanelOpen={setIsSidePanelOpen}
+              />
+            )}
+          </article>
+        </main>
       </div>
+
+      <footer>
+        <img src={logo} alt="logo" className="logo" />
+        <pre>@ 2023-2024 Personal Made with React.js</pre>
+      </footer>
       {isModalOpen &&
         message.length > 0 &&
         createPortal(

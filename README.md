@@ -1,7 +1,7 @@
-# Tabapay-UI Project Part-3 #
+# Tabapay-UI Project Part-4 #
 
 ## Description ##
-Add-on from Part 2, Added Body Content space on the right side to show title/label of the node, user clicks on.
+Add-on from Part 3, Added Basic Header and Footer, with appropriate CSS and Logo
 
 
 ## Installation ##
