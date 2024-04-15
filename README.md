@@ -7,7 +7,7 @@ Added basic APIs using Node and Express, to be served locally.
 ## Installation ##
 
 ### Frontend Installation ###
-Since this project is built using Vite, please run:
+Since this project is built using Vite, please run the following commands after navigating to frontend folder:
 1. npm install
 2. cd ./tabapay-ui/
 3. npm run dev
@@ -17,7 +17,7 @@ Open Browser with the url given by last command.
 To check production, run "npm run build"
 
 ### Backend Installation ###
-Please run the following commands:
+Please run the following commands after navigating to backend folder:
 1. npm init
 2. npm install express
 3. node index.js
